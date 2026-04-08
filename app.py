@@ -72,3 +72,4 @@ def admin():
             session['admin'] = True
             return redirect('/admin/dashboard')
     return render_template('admin.html')
+
