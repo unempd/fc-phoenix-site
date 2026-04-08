@@ -1,0 +1,35 @@
+"""
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ club.name }}</title>
+    <style>
+        body { font-family: Arial; margin: 0; background: #0b0f1a; color: white; }
+        header { background: #111827; padding: 20px; text-align: center; }
+        nav a { margin: 0 15px; color: #facc15; text-decoration: none; }
+        .container { padding: 40px; }
+        .card { background: #1f2937; padding: 20px; margin: 10px 0; border-radius: 10px; }
+        footer { text-align: center; padding: 20px; background: #111827; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>{{ club.name }}</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/team">Команда</a>
+        <a href="/about">О клубе</a>
+    </nav>
+</header>
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+<footer>
+    Создатель сайта: {{ club.creator }}
+</footer>
+</body>
+</html>
+"""
