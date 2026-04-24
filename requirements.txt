@@ -1,6 +1,5 @@
 Flask
 gunicorn
-psycopg[binary]
+psycopg2-binary
 python-dotenv
-supabase
 flask_sqlalchemy
